@@ -1,0 +1,19 @@
+section.search
+  .entry.input
+    input([(ngModel)]="str",
+      type="text",
+      id="searchInput",
+      size="25",
+      maxlength="50",
+      (keyup.enter)="search(str)",
+      placeholder="Enter name here...")
+    button(
+      [disabled]="userListLoading$|async",
+      kendoButton,
+      id="searchBtn",
+      (click)="search(str)") SEARCH
+    span.spinner.k-i-loading.k-icon(
+      *ngIf="userListLoading$|async",
+      style="margin-left: 10px; font-size: 24px; color: #ff6358")
+  .enrty
+    app-userlist([userlist]="userList$|async", [loaded]="userListLoaded$|async")

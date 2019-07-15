@@ -1,35 +1,32 @@
+/* tslint:disable: max-line-length */
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-describe('AppComponent', () => {
-  beforeEach(async(() => {
+import { AppComponent } from './app.component';
+import { NotFound404Component } from './not-found404.component';
+import { routes } from './app.routing';
+
+import 'rxjs/add/operator/takeUntil';
+import { SearchComponent } from './features/search/search.component';
+
+describe('App Component', () => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
-  }));
-
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+        ReactiveFormsModule,
+        RouterTestingModule.withRoutes(routes)
+        ],
+      providers: [],
+      declarations: [AppComponent, SearchComponent, NotFound404Component]
+    });
   });
 
-  it(`should have as title 'Github-search'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Github-search');
-  });
-
-  it('should render title in a h1 tag', () => {
+  it('should contain app text', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Github-search!');
-  });
+    expect(fixture.nativeElement).toContainText('Github');
+  }));
+
 });
