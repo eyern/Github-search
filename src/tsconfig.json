@@ -1,7 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
+    "outDir": "./scripts", 
+    "rootDir": "./src", 
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
