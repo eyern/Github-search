@@ -1,24 +1,59 @@
-# GITHUB USER SEARCH
+### Quotes
 
-Search Github users with pleasure
+## Description
+An application that allows a user to create quotes and have those quotes voted on whether they are terrible or inspirational
 
-## Basic scripts
+## User Requirements
+The applications allows users to do the following:
 
-Use `yarn start` for dev server. Default dev port is `3000`.
++ Create a new quote.
++ Upvote or downvote a quote.
++ Delete a quote
++ See the number of upvotes and number of downvotes for each quote.
 
-Use `yarn run start:hmr` to run dev server in HMR mode.
 
-Use `yarn run build` for production build.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
-Use `yarn run build:github` for production build to /docs folder and proper base href.
+### Development server
 
-Default ports and option to use proxy backend for dev server can be changed in `constants.js` file.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-To create AOT version, run `yarn run build:aot`. This will compile and build script.
-Then you can use `yarn run prodserver` to see to serve files.
+### Code scaffolding
 
-### Store Logger
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Store-logger outputs ngrx actions to the console.
-To set your development mode store logging preference, go to the constant.js file and edit the `STORE_DEV_TOOLS` constant.
-Available options are `logger | none`
+### Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+### Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+### Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+### Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Installations
++ '''Make sure you have all the Requirements or running angular apps installed such as node,npm, tsc'''
++ '''Clone the project into your machine from https://github.com/eyern/quotes.git '''
++ '''Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.'''
+
+
+## Live site
+To view the page click here: [QUOTES](https://eyern.github.io/Github-search/)
+
+## Technology Used
+ -Angular JS
+ -HTML 
+ -CSS
+## Contact Details
+You can contact me at eyernfuture@gmail.com
+
+## License
+
+Copyright (c) 2019 **Ian Kipkoech**
