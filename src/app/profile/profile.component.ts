@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'github-profile',
+  selector: 'Github-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
