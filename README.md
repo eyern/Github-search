@@ -1,7 +1,7 @@
-### Quotes
+### Github-search
 
 ## Description
-An application that allows a user to create quotes and have those quotes voted on whether they are terrible or inspirational
+a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. 
 
 ## User Requirements
 The applications allows users to do the following:
@@ -40,7 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Installations
 + '''Make sure you have all the Requirements or running angular apps installed such as node,npm, tsc'''
-+ '''Clone the project into your machine from https://github.com/eyern/quotes.git '''
++ '''Clone the project into your machine from https://github.com/eyern/Github-search.git '''
 + '''Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.'''
 
 
